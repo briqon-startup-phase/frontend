@@ -127,13 +127,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
             <X size={20} />
           </button>
         </div>
-        <div className="workspace-label">
-          <span className="workspace-initial">B</span>
-          <div>
-            <strong>{state.preferences.workspace}</strong>
-            <span>Equipment workspace</span>
-          </div>
-        </div>
+        <hr className="sidebar-divider" />
         <p className="nav-label">Workspace</p>
         <nav>
           {links.map(({ href, label, icon: Icon }) => (
